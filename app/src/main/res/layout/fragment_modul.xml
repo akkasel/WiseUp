@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    tools:context=".ModulFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMateri1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/gambarCardModulMateri1"
+                android:layout_width="140dp"
+                android:layout_height="105dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/videolesson7" />
+
+            <TextView
+                android:id="@+id/textModulMateri1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/gambarCardModulMateri1"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/purple_200"
+                android:textSize="16sp"
+                android:text="Pengenalan Hoax"/>
+
+            <TextView
+                android:id="@+id/textMateri1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textModulMateri1"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/gambarCardModulMateri1"
+                android:textSize="14sp"
+                android:text="Materi 1"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textPoint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gambarCardModulMateri1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:text="- Memahami pengertian dari Hoax"/>
+
+            <TextView
+                android:id="@+id/belowtextPoint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textPoint1"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:text="- Perbedaan berita faktual, pendapat, dan opini"/>
+
+            <TextView
+                android:id="@+id/belowbelowtextPoint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/belowtextPoint1"
+                android:layout_marginLeft="10dp"
+                android:textSize="12dp"
+                android:text="- Mengenali sumber-sumber berita yang terpercaya dan kredibel"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMateri2"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/cardMateri1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/gambarCardModulMateri2"
+                    android:layout_width="140dp"
+                    android:layout_height="105dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/videolesson2" />
+
+                <TextView
+                    android:id="@+id/textModulMateri2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/gambarCardModulMateri2"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="16sp"
+                    android:text="Menganalisis Kredibilitas Berita"/>
+
+                <TextView
+                    android:id="@+id/textMateri2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textModulMateri2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gambarCardModulMateri2"
+                    android:textSize="14sp"
+                    android:text="Materi 2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textPoint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gambarCardModulMateri2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="- Menjelaskan langkah-langkah dalam memverifikasi kebenaran berita."/>
+
+                <TextView
+                    android:id="@+id/belowtextPoint2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textPoint2"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:text="- Mengenali tanda-tanda berita palsu atau hoax, seperti judul yang sensasional, gambar yang diedit, dan sumber yang tidak jelas."/>
+
+                <TextView
+                    android:id="@+id/belowbelowtextPoint2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/belowtextPoint2"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:text="- Menggunakan alat online untuk memeriksa keaslian gambar, video, dan kutipan."/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMateri3"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/cardMateri2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/gambarCardModulMateri3"
+                    android:layout_width="140dp"
+                    android:layout_height="105dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/videolesson3" />
+
+                <TextView
+                    android:id="@+id/textModulMateri3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/gambarCardModulMateri3"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="16sp"
+                    android:text="Mengenal Bias dalam berita"/>
+
+                <TextView
+                    android:id="@+id/textMateri3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textModulMateri3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gambarCardModulMateri3"
+                    android:textSize="14sp"
+                    android:text="Materi 3"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textPoint3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gambarCardModulMateri3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="- Memahami berbagai jenis bias yang mungkin ada dalam pemberitaan."/>
+
+                <TextView
+                    android:id="@+id/belowtextPoint3"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textPoint3"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:text="- Mengenali faktor-faktor yang memengaruhi bias, seperti kepentingan politik, sosial, atau komersial."/>
+
+                <TextView
+                    android:id="@+id/belowbelowtextPoint3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/belowtextPoint3"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:text="- Mempelajari cara melihat berita dari berbagai sudut pandang dan mencari informasi tambahan untuk mendapatkan perspektif yang lebih lengkap."/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMateri4"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/cardMateri3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/gambarCardModulMateri4"
+                    android:layout_width="140dp"
+                    android:layout_height="105dp"
+                    android:layout_alignParentLeft="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/videolesson1" />
+
+                <TextView
+                    android:id="@+id/textModulMateri4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/gambarCardModulMateri4"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="16sp"
+                    android:text="Etika dan Tanggung Jawab dalam Berbagi Berita"/>
+
+                <TextView
+                    android:id="@+id/textMateri4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textModulMateri4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/gambarCardModulMateri4"
+                    android:textSize="14sp"
+                    android:text="Materi 4"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/textPoint4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gambarCardModulMateri4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="12dp"
+                    android:text="- Menjelaskan pentingnya berbagi berita secara bertanggung jawab dan tidak sembarangan."/>
+
+                <TextView
+                    android:id="@+id/belowtextPoint4"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textPoint4"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:text="- Membahas konsekuensi dari menyebarkan berita palsu atau tidak diverifikasi."/>
+
+                <TextView
+                    android:id="@+id/belowbelowtextPoint4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/belowtextPoint4"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12dp"
+                    android:text="- Memberikan panduan praktis dalam berbagi berita dengan keluarga, teman, dan media sosial."/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Space
+            app:layout_constraintTop_toBottomOf="@id/cardMateri4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

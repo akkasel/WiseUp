@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WiseUp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="saved">Saved</string>
+    <string name="profile">Profile</string>
+    <string name="kursus_pemilahan_berita_dan_mendeteksi_hoax_dirancang_untuk_memberikan_pemahaman_yang_komprehensif_tentang_pentingnya_pemilahan_berita_yang_akurat_dalam_era_digital_yang_penuh_dengan_informasi_yang_tidak_diverifikasi_kursus_ini_akan_membekali_peserta_dengan_keterampilan_kritis_dalam_mengidentifikasi_dan_menghindari_berita_palsu_atau_hoax_sehingga_mereka_dapat_menjadi_konsumen_berita_yang_cerdas_dan_bertanggung_jawab">Kursus Pemilahan Berita dan Mendeteksi Hoax dirancang untuk memberikan pemahaman yang komprehensif tentang pentingnya pemilahan berita yang akurat dalam era digital yang penuh dengan informasi yang tidak diverifikasi. Kursus ini akan membekali peserta dengan keterampilan kritis dalam mengidentifikasi dan menghindari berita palsu atau hoax, sehingga mereka dapat menjadi konsumen berita yang cerdas dan bertanggung jawab.</string>
+</resources>

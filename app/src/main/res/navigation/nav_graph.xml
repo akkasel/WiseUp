@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destination_home">
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="com.akka.wiseup.HomeFragment"
+        android:label="Home Fragment" >
+        <action
+            android:id="@+id/action_destination_home_to_destination_saved"
+            app:destination="@id/destination_saved" />
+        <action
+            android:id="@+id/action_destination_home_to_destination_search"
+            app:destination="@id/destination_search" />
+        <action
+            android:id="@+id/action_destination_home_to_destination_profile"
+            app:destination="@id/destination_profile" />
+        <action
+            android:id="@+id/action_destination_home_to_courseOverviewFragment"
+            app:destination="@id/courseOverviewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_search"
+        android:name="com.akka.wiseup.SearchFragment"
+        android:label="Search Fragment" >
+        <action
+            android:id="@+id/action_destination_search_to_destination_home"
+            app:destination="@id/destination_home" />
+        <action
+            android:id="@+id/action_destination_search_to_destination_saved"
+            app:destination="@id/destination_saved" />
+        <action
+            android:id="@+id/action_destination_search_to_destination_profile"
+            app:destination="@id/destination_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_saved"
+        android:name="com.akka.wiseup.SavedFragment"
+        android:label="Saved Fragment" >
+        <action
+            android:id="@+id/action_destination_saved_to_destination_home"
+            app:destination="@id/destination_home" />
+        <action
+            android:id="@+id/action_destination_saved_to_destination_search"
+            app:destination="@id/destination_search" />
+        <action
+            android:id="@+id/action_destination_saved_to_destination_profile"
+            app:destination="@id/destination_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_profile"
+        android:name="com.akka.wiseup.ProfileFragment"
+        android:label="Profile Fragment" >
+        <action
+            android:id="@+id/action_destination_profile_to_destination_home"
+            app:destination="@id/destination_home" />
+        <action
+            android:id="@+id/action_destination_profile_to_destination_saved"
+            app:destination="@id/destination_saved" />
+        <action
+            android:id="@+id/action_destination_profile_to_destination_search"
+            app:destination="@id/destination_search" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseOverviewFragment"
+        android:name="com.akka.wiseup.CourseOverviewFragment"
+        android:label="fragment_course_overview"
+        tools:layout="@layout/fragment_course_overview" >
+        <action
+            android:id="@+id/action_courseOverviewFragment_to_destination_home"
+            app:destination="@id/destination_home" />
+    </fragment>
+
+    <!-- Add other fragments as destinations -->
+
+</navigation>

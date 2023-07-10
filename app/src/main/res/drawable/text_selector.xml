@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/purple_200" /> <!-- Text color when pressed -->
+            <padding android:bottom="2dp" /> <!-- Bottom padding for the purple line -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/background" /> <!-- Default text color -->
+        </shape>
+    </item>
+</selector>

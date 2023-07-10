@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileFragment"
+    android:background="@color/background">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Background Photo -->
+    <ImageView
+        android:id="@+id/backgroundPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@color/purple_200"
+        android:background="@color/purple_200"/>
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_settings"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Settings Button" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profilePictureCard"
+        app:layout_constraintTop_toTopOf="@id/backgroundPhoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="250dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="250dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/natasya"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/profilePictureCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Natasya Roderica"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Umur -->
+    <TextView
+        android:id="@+id/umurTextView"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Umur : 19 tahun"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/nameTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp" />
+
+    <!-- Pekerjaan -->
+    <TextView
+        android:id="@+id/pekerjaanTextView"
+        app:layout_constraintTop_toBottomOf="@id/umurTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pekerjaan : Mahasiswa"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/nameTextView"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Bergabung Sejak -->
+    <TextView
+        android:id="@+id/bergabungSejakTextView"
+        app:layout_constraintTop_toBottomOf="@id/pekerjaanTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bergabung Sejak : 2023"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/nameTextView"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Social Media logo -->
+    <LinearLayout
+        android:id="@+id/socialMediaLayout"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/bergabungSejakTextView"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_instagram"
+            android:contentDescription="Instagram Logo"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_twitter"
+            android:contentDescription="Twitter Logo"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_facebook"
+            android:contentDescription="Facebook Logo"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/course_count"
+        app:layout_constraintTop_toBottomOf="@id/socialMediaLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="03"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/courseAmountInProfile"
+        app:layout_constraintTop_toBottomOf="@id/course_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kursus"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/purple_line_in_profile"
+        app:layout_constraintTop_toBottomOf="@id/courseAmountInProfile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="50dp"
+        android:layout_height="2dp"
+        android:background="@color/purple_200" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMateri1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/purple_line_in_profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="348dp"
+        android:layout_height="104dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Add your item view layout here -->
+            <ImageView
+                android:id="@+id/gambarCardModulMateri1"
+                android:layout_width="140dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/koran_gradasi" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textModulMateri1"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:textSize="14dp"
+                android:text="Pemilahan Berita dan Mengidentifikasi Hoax"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileCard2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cardMateri1"
+        app:layout_constraintStart_toStartOf="@id/cardMateri1"
+        android:layout_width="348dp"
+        android:layout_height="104dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Add your item view layout here -->
+            <ImageView
+                android:id="@+id/gambarProfile2"
+                android:layout_width="140dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/adatsunda" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textSaved2"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:textSize="14dp"
+                android:text="Belajar Bahasa Sunda dari awal hingga mahir"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile3"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/profileCard2"
+        app:layout_constraintStart_toStartOf="@id/profileCard2"
+        android:layout_width="348dp"
+        android:layout_height="104dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Add your item view layout here -->
+            <ImageView
+                android:id="@+id/gambarProfile3"
+                android:layout_width="140dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/edukasi_seks" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textSaved3"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:textSize="14dp"
+                android:text="Edukasi Seks Bagi Generasi Muda"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProfile4"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/cardProfile3"
+        app:layout_constraintStart_toStartOf="@id/cardProfile3"
+        android:layout_width="348dp"
+        android:layout_height="104dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Add your item view layout here -->
+            <ImageView
+                android:id="@+id/gambarProfile4"
+                android:layout_width="140dp"
+                android:layout_height="105dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/taripiring" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textSaved4"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:textSize="14dp"
+                android:text="Wawasan Budaya Sumatra Barat"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        app:layout_constraintTop_toBottomOf="@id/cardProfile4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

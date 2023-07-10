@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_marginBottom="70dp"
+    tools:context=".RangkumanFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/headlineRangkuman"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Pengenalan"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/paragrafRangkuman"
+        app:layout_constraintTop_toBottomOf="@id/headlineRangkuman"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/kursus_pemilahan_berita_dan_mendeteksi_hoax_dirancang_untuk_memberikan_pemahaman_yang_komprehensif_tentang_pentingnya_pemilahan_berita_yang_akurat_dalam_era_digital_yang_penuh_dengan_informasi_yang_tidak_diverifikasi_kursus_ini_akan_membekali_peserta_dengan_keterampilan_kritis_dalam_mengidentifikasi_dan_menghindari_berita_palsu_atau_hoax_sehingga_mereka_dapat_menjadi_konsumen_berita_yang_cerdas_dan_bertanggung_jawab"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonLihatLebihBanyak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintTop_toBottomOf="@id/paragrafRangkuman"
+        app:layout_constraintStart_toStartOf="@id/paragrafRangkuman"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="10dp"
+        android:text="Lihat Lebih Banyak"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/headlineDiskusi"
+        app:layout_constraintTop_toBottomOf="@id/buttonLihatLebihBanyak"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Diskusi"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/layout3Komentar"
+        app:layout_constraintTop_toBottomOf="@id/headlineDiskusi"
+        app:layout_constraintStart_toStartOf="@id/headlineDiskusi"
+        android:layout_width="135dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:background="@color/lightred">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="65dp"
+            android:text="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:text="Komentar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout753Peserta"
+        app:layout_constraintTop_toBottomOf="@id/headlineDiskusi"
+        app:layout_constraintStart_toEndOf="@id/layout3Komentar"
+        android:layout_width="135dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:background="@color/lightred">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="55dp"
+            android:text="753" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Peserta" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonTambahkanKomentar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        app:layout_constraintTop_toBottomOf="@id/layout3Komentar"
+        app:layout_constraintStart_toStartOf="@id/headlineDiskusi"
+        android:backgroundTint="@color/grey"
+        android:layout_marginTop="20dp"
+        android:text="Tambahkan Komentar"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"/>
+
+    <!-- Comment 1 -->
+    <LinearLayout
+        android:id="@+id/layoutComment1"
+        app:layout_constraintTop_toBottomOf="@id/buttonTambahkanKomentar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Profile Picture -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/commentProfilePicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardCornerRadius="250dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="250dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/orang_random_1"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/commentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sherly"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Timestamp -->
+            <TextView
+                android:id="@+id/timestamp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31 menit yang lalu"
+                android:textSize="12sp" />
+
+            <!-- Comment -->
+            <TextView
+                android:id="@+id/comment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bagaimana cara mengidentifikasi hoax dengan cepat?"
+                android:textSize="14sp"
+                android:textColor="@color/black"/>
+
+            <!-- Like and Reply buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Like button -->
+                <TextView
+                    android:id="@+id/likeButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suka"
+                    android:textColor="@color/purple_200"/>
+
+                <!-- Reply button -->
+                <TextView
+                    android:id="@+id/replyButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Balas" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <!-- Comment 2 -->
+    <LinearLayout
+        android:id="@+id/layoutComment2"
+        app:layout_constraintTop_toBottomOf="@id/layoutComment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- Profile Picture -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/commentProfilePicture2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="250dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:cardCornerRadius="250dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/natasya"
+                        android:scaleType="centerCrop"/>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <!-- Name -->
+                <TextView
+                    android:id="@+id/commentName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Natasya"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <!-- Timestamp -->
+                <TextView
+                    android:id="@+id/timestamp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="31 menit yang lalu"
+                    android:textSize="12sp" />
+
+                <!-- Comment -->
+                <TextView
+                    android:id="@+id/comment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana cara mengidentifikasi hoax dengan cepat?"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <!-- Like and Reply buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Like button -->
+                    <TextView
+                        android:id="@+id/likeButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suka"
+                        android:textColor="@color/purple_200"/>
+
+                    <!-- Reply button -->
+                    <TextView
+                        android:id="@+id/replyButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Balas" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

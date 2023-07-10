@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CourseOverviewFragment"
+    android:background="@color/background">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/topbarlayoutCourseOverView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backButtonCourseOverview"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/detailTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/savedButtonCourseOverview"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/outline_bookmark_border_24" />
+
+    </LinearLayout>
+
+    <!--
+    <VideoView
+        android:id="@+id/overviewvideo1"
+        app:layout_constraintTop_toBottomOf="@id/topbarlayoutCourseOverView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+        -->
+
+    <ImageView
+        android:id="@+id/overviewvideo1"
+        app:layout_constraintTop_toBottomOf="@id/topbarlayoutCourseOverView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/videolesson8"/>
+
+    <TextView
+        android:id="@+id/judulKursusOverview"
+        app:layout_constraintTop_toBottomOf="@id/overviewvideo1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Pemilahan Berita dan Cara Mengidentifikasi Hoax"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon_jam_course_overview"
+        app:layout_constraintTop_toBottomOf="@id/judulKursusOverview"
+        app:layout_constraintStart_toStartOf="@id/judulKursusOverview"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_access_time_24"/>
+
+    <TextView
+        android:id="@+id/textDurasiKursus"
+        app:layout_constraintTop_toBottomOf="@id/judulKursusOverview"
+        app:layout_constraintStart_toEndOf="@id/icon_jam_course_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="8dp"
+        android:text="2 jam 30 menit"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/icon_camera_course_overview"
+        app:layout_constraintTop_toBottomOf="@id/judulKursusOverview"
+        app:layout_constraintStart_toEndOf="@id/textDurasiKursus"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_camera"/>
+
+    <TextView
+        android:id="@+id/textJumlahModul"
+        app:layout_constraintTop_toBottomOf="@id/judulKursusOverview"
+        app:layout_constraintStart_toEndOf="@id/icon_camera_course_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="8dp"
+        android:text="4 Modul"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textParagrafOverviewKursus"
+        app:layout_constraintTop_toBottomOf="@id/icon_jam_course_overview"
+        app:layout_constraintStart_toStartOf="@id/judulKursusOverview"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="8dp"
+        android:text="Kursus Pemilahan Berita dan Mendeteksi Hoax dirancang untuk memberikan pemahaman yang tentang pentingnya pemilahan berita yang akurat dalam era digital yang penuh dengan informasi yang tidak diverifikasi. Kursus ini akan membekali peserta dengan keterampilan kritis dalam mengidentifikasi dan menghindari berita palsu atau hoax, sehingga mereka dapat menjadi konsumen berita yang cerdas dan bertanggung jawab."
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/text_rangkuman"
+        app:layout_constraintTop_toBottomOf="@id/textParagrafOverviewKursus"
+        app:layout_constraintStart_toStartOf="@id/textParagrafOverviewKursus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/text_selector"
+        android:text="Rangkuman" />
+
+    <TextView
+        android:id="@+id/text_modul"
+        app:layout_constraintTop_toBottomOf="@id/textParagrafOverviewKursus"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/text_selector"
+        android:text="Modul" />
+
+    <Space
+        android:id="@+id/blank_space_course_overview"
+        app:layout_constraintTop_toBottomOf="@id/text_rangkuman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         android:layout_height="10dp"
+        android:layout_width="match_parent"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        app:layout_constraintTop_toBottomOf="@id/blank_space_course_overview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
