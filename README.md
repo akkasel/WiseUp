@@ -1,6 +1,9 @@
 # WiseUp
 WiseUp - Aplikasi Edukasi Ilmu Penyelesaian Isu-Isu Masyarakat
 
+Screenshot
+![Alt Text](url_gambar)
+
 # Cara Instalasi
 ## Cara 1 : Instalasi Melalui Github
 Berikut adalah langkah-langkah untuk instalasi aplikasi melalui GitHub:<br>
@@ -53,4 +56,4 @@ Jika aplikasi belum dapat dilihat melalui Play Store,<br>
 hal tersebut dapat dikarenakan proses Review dari Google Play yang belum selesai.<br>
 Jika hal di atas terjadi, maka anda dapat melakukan Cara 1.
 
-- Regards, Codenesia
+Regards, Codenesia
