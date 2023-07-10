@@ -2,7 +2,7 @@
 WiseUp - Aplikasi Edukasi Ilmu Penyelesaian Isu-Isu Masyarakat
 
 # Screenshot<br>
-![Alt Text](screenshot/Frame 142(1).png)
+!Halo(screenshot/Frame 142(1).png)
 
 # Cara Instalasi
 ## Cara 1 : Instalasi Melalui Github
