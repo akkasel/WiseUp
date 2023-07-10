@@ -2,7 +2,7 @@
 WiseUp - Aplikasi Edukasi Ilmu Penyelesaian Isu-Isu Masyarakat
 
 # Screenshot<br>
-!Halo(screenshot/Frame 142(1).png)
+!Halo(https://github.com/akkasel/WiseUp/blob/288960707813bd0766047d47a71d1af1d0b576fb/screenshot/Frame%20142(1).png)
 
 # Cara Instalasi
 ## Cara 1 : Instalasi Melalui Github
